@@ -24,6 +24,7 @@ const CharacterCard = ({ character }) => (
       <p className="text-sm text-gray-600 dark:text-gray-300"><span className="font-semibold">Gender:</span> {character.gender}</p>
       <p className="text-sm text-gray-600 dark:text-gray-300"><span className="font-semibold">Origin:</span> {character.origin.name}</p>
       <p className="text-sm text-gray-600 dark:text-gray-300"><span className="font-semibold">Location:</span> {character.location.name}</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300"><span className="font-semibold">Episodes Appereance:</span> {character.episode.length}</p>
     </div>
   </div>
 );
