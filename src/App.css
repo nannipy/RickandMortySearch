@@ -2,96 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-.character-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.character{
-    border:1px solid #ccc;
-    border-radius: 12px;
-    margin: 10px;
-    width: 350px;
-    height: auto;
-    text-align: center;
-
-}
-.character img{
-    width: 100%;
-    border-radius: 12px 12px 0 0;
-}
-
+/* Light and dark theme variables */
 :root.theme-light {
-	color-scheme: light;
-	--theme-primary: #212129;
-	--theme-secondary: #fefefe;
-	--theme-border: #edeaea;
+  color-scheme: light;
+  --theme-primary: #212129;
+  --theme-secondary: #fefefe;
+  --theme-border: #edeaea;
 }
 
 :root {
-	color-scheme: dark;
-	--theme-primary: #fefefe;
-	--theme-secondary: #212129;
-	--theme-border: #31313e;
+  color-scheme: dark;
+  --theme-primary: #fefefe;
+  --theme-secondary: #212129;
+  --theme-border: #31313e;
 }
 
-select {
-    appearance: none;
-    background-color: white;
-    color: #2d3748; /* dark:text-gray-800 */
-  }
-  
-  select.dark {
-    background-color: #4a5568; /* dark:bg-gray-700 */
-    color: white; /* dark:text-white */
-    border-color: #718096; /* dark:border-gray-600 */
-  }
-  
-  /* Applicare stili aggiuntivi per il focus */
-  select:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 focus:ring-blue-500 */
-  }
-  @use postcss-nested;
-  body {
-    background-color: black;
-    font-size: 0.9vw;
-  }
-  .container 
-    {
-        position: relative;
-        text-align: center;
-        height: 100px; /* Adjust this value to control the space above the content */
-        margin-top: 30px;
-  }
+
+/* Body styles */
+body {
+  background-color: black;
+  font-size: 0.9vw;
+}
+
+/* Container styles */
+.container {
+  position: relative;
+  text-align: center;
+  height: 100px; /* Adjust this value to control the space above the content */
+  margin-top: 40px;
+}
+
+/* Title styles */
+.title {
+  position: absolute;
+  bottom: 0.8em;
+  text-align: center;
+  font-family: 'Get Schwifty';
+  font-size: 2em; /* Adjusted for mobile */
+  color: #08BAE3;
+  z-index: 50;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+}
+
+.title span {
+  font-size: 0.5em;
+}
+
+.title.middle {
+  -webkit-text-stroke: 0.1em #FFF765;
+  z-index: 49;
+}
+
+.title.bottom {
+  -webkit-text-stroke: 0.4em black;
+  z-index: 48;
+}
+
+/* Font face */
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
+
+/* Media queries for responsive design */
+@media (max-width: 640px) {
   .title {
-    position: absolute;
-    bottom: 0.8em;
-    text-align: center;
-    font-family: 'Get Schwifty';
-    font-size: 4em;
-    color: #08BAE3;
-    z-index: 50;
-    -webkit-text-stroke: 1px rgba(0,0,0,0.5);
-    
-    span {
-      font-size: 0.5em;
-    }
+    font-size: 8.5em; /* Adjusted for mobile */
   }
-  
-  .title.middle {
-    -webkit-text-stroke: 0.1em #FFF765;
-    z-index: 49;
+  .character {
+    width: 100%; /* Full width for mobile */
   }
+  form-el{
+    width: 100%;
+    font-size: xx-large;
   
-  .title.bottom {
-    -webkit-text-stroke: 0.4em black;
-    z-index: 48;
   }
-  
-  @font-face {
-    font-family: 'Get Schwifty';
-    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 5em; /* Adjusted for larger screens */
   }
-  
+
+  .character {
+    width: 100%; /* Adjusted for larger screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4em; /* Adjusted for larger screens */
+  }
+
+  .character {
+    width: 350px; /* Adjusted for larger screens */
+  }
+}
