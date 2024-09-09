@@ -2,7 +2,28 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import CharacterCard from './CharacterCard';
-import Title from './Title';
+
+
+const Title = () => (
+    
+  <div className='container'>
+  <div className='title'>
+      Rick
+      <span> and </span>
+      Morty Character Search
+  </div>
+  <div className='title middle'>
+      Rick
+      <span> and </span>
+      Morty Character Search
+  </div>
+  <div className='title bottom'>
+      Rick
+      <span> and </span>
+      Morty Character Search 
+  </div>
+  </div>
+    );
 
 
 
