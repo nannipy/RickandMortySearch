@@ -113,3 +113,23 @@ body {
     width: 350px; /* Adjusted for larger screens */
   }
 }
+
+.bg-morty{
+  background-color: #FEF765;
+}
+
+.text-rick{
+  color: #08BAE3;
+}
+
+.bg-rick{
+  background-color: #08BAE3;
+}
+
+.bg-summer{
+  background-color: #FF3333;
+}
+
+.bg-beth{
+  background-color: #FF6633;
+}
