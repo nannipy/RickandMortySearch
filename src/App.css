@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Styles for the character list and cards */
+.character-list {
+  @apply flex flex-wrap justify-center;
+}
+
+.character {
+  @apply border border-gray-300 rounded-lg m-4 w-full sm:w-80 text-center; /* Adjust width for mobile */
+}
+
+.character img {
+  @apply w-full rounded-t-lg;
+}
 
 /* Light and dark theme variables */
 :root.theme-light {
@@ -17,6 +29,8 @@
   --theme-secondary: #212129;
   --theme-border: #31313e;
 }
+
+/* Custom select styles */
 
 
 /* Body styles */

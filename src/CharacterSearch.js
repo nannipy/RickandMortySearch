@@ -73,7 +73,7 @@ const CharacterSearch = () => {
     
     return (
       <div className="max-w-7xl mx-auto p-6 ">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-8 mt-20">
         <Title/>
           <button
             onClick={() => setDarkMode(!darkMode)}
@@ -82,7 +82,9 @@ const CharacterSearch = () => {
             {darkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </div>
+       
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg mb-8">
+  
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
             <input 
               type="text"
@@ -94,7 +96,7 @@ const CharacterSearch = () => {
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
-              className="form-el w-full p-3 sm:p-4 text-base sm:text-lg border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
+              className=" appearance-none form-el w-full p-3 sm:p-4 text-base sm:text-lg border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
               >
               <option value="">Select status</option>
               <option value="alive">Alive</option>
@@ -106,12 +108,12 @@ const CharacterSearch = () => {
               placeholder="Species"
               value={species}
               onChange={(e) => setSpecies(e.target.value)}
-              className="form-el w-full p-3 sm:p-4 text-base sm:text-lg border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
+              className="  form-el w-full p-3 sm:p-4 text-base sm:text-lg border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
               />
             <select
               value={gender}
               onChange={(e) => setGender(e.target.value)}
-              className="form-el w-full p-3 sm:p-4 text-base sm:text-lg border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
+              className=" appearance-none form-el w-full p-3 sm:p-4 text-base sm:text-lg border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-800 dark:text-white"
               >
               <option value="">Select gender</option>
               <option value="female">Female</option>
