@@ -2,30 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import CharacterCard from './CharacterCard';
-
-
-const Title = () => (
-    
-  <div className='container'>
-  <div className='title'>
-      Rick
-      <span> and </span>
-      Morty Character Search
-  </div>
-  <div className='title middle'>
-      Rick
-      <span> and </span>
-      Morty Character Search
-  </div>
-  <div className='title bottom'>
-      Rick
-      <span> and </span>
-      Morty Character Search 
-  </div>
-  </div>
-    );
-
-
+import Title from './components/Title'
 
 const CharacterSearch = () => {
     const [characters, setCharacters] = useState([]);
@@ -93,9 +70,9 @@ const CharacterSearch = () => {
     };
     
     return (
-      <div className="max-w-7xl mx-auto p-6 ">
-        <div className="flex justify-between items-center mb-8 mt-20">
-        <Title/>
+      <div className="max-w-7xl p-6 ">      
+        <div className="flex justify-between items-center mb-8 mt-2 ">
+          <Title/>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-800 dark:text-white"
@@ -103,9 +80,7 @@ const CharacterSearch = () => {
             {darkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </div>
-       
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg mb-8 ">
-  
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4 ">
             <input 
               type="text"
@@ -154,7 +129,7 @@ const CharacterSearch = () => {
           </div>
           <button 
             onClick={handleSearch} 
-            className="form-el w-80 p-3 sm:p-4 text-base sm:text-lg   bg-morty font-extrabold  text-rick rounded-md hover:bg-morty focus:outline-black focus:ring-2 focus:ring-rick focus:ring-offset-2 transition duration-300 ease-in-out transform hover:-translate-y-1 "
+            className="form-el w-80 p-3 sm:p-4 text-base sm:text-lg  bg-morty font-extrabold  text-rick rounded-md hover:bg-morty focus:outline-black focus:ring-2 focus:ring-rick focus:ring-offset-2 transition duration-300 ease-in-out transform hover:-translate-y-1 "
             disabled={loading}
           >
             {loading ? (

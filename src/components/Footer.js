@@ -15,17 +15,16 @@ const Footer = () => {
             <ul className="flex flex-wrap justify-center space-x-4 sm:space-x-6">
               <li>
                 <button className="text-gray-400 hover:text-white">
-                  Link 1
+                  Privacy Policy
                 </button>
               </li>
               <li>
                 <button className="text-gray-400 hover:text-white">
-                  Link 2
+                  Terms of Service
                 </button>
               </li>
               <li>
                 <button className="text-gray-400 hover:text-white">
-                  Link 3
                 </button>
               </li>
             </ul>

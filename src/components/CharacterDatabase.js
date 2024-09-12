@@ -38,7 +38,7 @@ const CharacterDatabase = () => {
 
   return (
     <div className="pb-8">
-      <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Database dei Personaggi</h2>
+      <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 dark:text-white text-black">Database dei Personaggi</h2>
       {error && (
         <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4 sm:mb-6" role="alert">
           <p>{error}</p>
@@ -53,8 +53,8 @@ const CharacterDatabase = () => {
         <div className="text-center mb-6 sm:mb-8">
           <button 
             onClick={loadMore} 
-            className="w-full sm:w-auto px-4 py-2 bg-morty text-black rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 ease-in-out"
-          >
+            className="w-full sm:w-auto bg-morty hover:bg-rick text-black font-bold py-4 px-6 rounded-lg text-lg transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg"
+            >
             Carica altri
           </button>
         </div>

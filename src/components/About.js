@@ -11,7 +11,7 @@ const About = () => {
   return (
     <AnimatePresence>
       <motion.section 
-        className="bg-white py-6 px-4 sm:py-12 sm:px-6 rounded-lg"
+        className="bg-white py-6 px-4 sm:py-12 sm:px-6 rounded-lg mb-12"
         initial="hidden"
         animate="visible"
         exit="exit"
