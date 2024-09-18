@@ -11,7 +11,7 @@ const About = () => {
   return (
     <AnimatePresence>
       <motion.section 
-        className="bg-white py-6 px-4 sm:py-12 sm:px-6 rounded-lg mb-12"
+        className=" bg-gray-800 dark:bg-white  py-6 px-4 sm:py-12 sm:px-6 rounded-lg mb-12"
         initial="hidden"
         animate="visible"
         exit="exit"
@@ -20,7 +20,7 @@ const About = () => {
       >
         <div className="max-w-5xl mx-auto">
           <motion.h2 
-            className="text-3xl sm:text-4xl font-bold mb-6 text-black text-center"
+            className="text-3xl sm:text-4xl font-bold mb-6 text-white text-center dark:text-black"
             variants={fadeIn}
             transition={{ delay: 0.1, duration: 0.5 }}
           >
@@ -49,7 +49,7 @@ const About = () => {
                 <li>React ⚛️</li>
                 <li>Tailwind CSS 🎨</li>
                 <li>Framer Motion 🎭</li>
-                <li>Rick and Morty API 🧪</li>
+                <li><a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer" className='underline'>Rick and Morty API 🧪</a></li>
               </ul>
             </motion.div>
 
