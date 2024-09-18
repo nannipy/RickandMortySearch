@@ -1,5 +1,5 @@
 {
- "name": "Rick And Morty Character Search",
+ "name": "rick-and-morty-search",
  "version": "0.1.0",
  "private": true,
  "dependencies": {
