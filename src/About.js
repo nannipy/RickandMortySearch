@@ -11,7 +11,7 @@ const About = () => {
   return (
     <AnimatePresence>
       <motion.section 
-        className=" bg-gray-800 dark:bg-white  py-6 px-4 sm:py-12 sm:px-6 rounded-lg mb-12"
+        className=" bg-gray-200/80 dark:bg-gray-800/80 py-6 px-4 sm:py-12 sm:px-6 rounded-lg mb-12"
         initial="hidden"
         animate="visible"
         exit="exit"
@@ -20,7 +20,7 @@ const About = () => {
       >
         <div className="max-w-5xl mx-auto">
           <motion.h2 
-            className="text-3xl sm:text-4xl font-bold mb-6 text-white text-center dark:text-black"
+            className="text-3xl sm:text-4xl font-bold mb-6 text-black text-center dark:text-white"
             variants={fadeIn}
             transition={{ delay: 0.1, duration: 0.5 }}
           >
