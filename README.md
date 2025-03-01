@@ -14,7 +14,7 @@
 
 ### 🚀 Explore the Multiverse of Rick and Morty Characters! 
 
-[Live Demo](https://https://rickand-morty-search.vercel.app) | [Report Bug](https://github.com/nannipy/RickandMortySearch/issues) | [Request Feature](https://github.com/nannipy/RickandMortySearch/issues)
+[Live Demo](https://rickand-morty-search.vercel.app) | [Report Bug](https://github.com/nannipy/RickandMortySearch/issues) | [Request Feature](https://github.com/nannipy/RickandMortySearch/issues)
 
 </div>
 
