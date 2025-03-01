@@ -14,7 +14,7 @@
 
 ### 🚀 Explore the Multiverse of Rick and Morty Characters! 
 
-[Live Demo](https://your-demo-link.com) | [Report Bug](https://github.com/yourusername/RickandMortySearch/issues) | [Request Feature](https://github.com/yourusername/RickandMortySearch/issues)
+[Live Demo](https://https://rickand-morty-search.vercel.app) | [Report Bug](https://github.com/nannipy/RickandMortySearch/issues) | [Request Feature](https://github.com/nannipy/RickandMortySearch/issues)
 
 </div>
 
@@ -58,7 +58,7 @@ Get schwifty with this React-based web application that lets you explore the vas
 
 1️⃣ **Clone & Install**
 ```bash
-git clone https://github.com/yourusername/RickandMortySearch.git && cd RickandMortySearch && npm install
+git clone https://github.com/nannipy/RickandMortySearch.git && cd RickandMortySearch && npm install
 ```
 
 2️⃣ **Launch**
@@ -118,7 +118,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-Nannipy - [GitHub](https://github.com/yourusername)
+Nannipy - [GitHub](https://github.com/nannipy)
 
 ---
 
